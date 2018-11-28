@@ -22,9 +22,11 @@ def largestPrimeFactor(num):
     result = 2
     
     while True:
-        if num % i == 0 and isPrime(i) == True:
-            num = num/i # divide the number by the least prime number each time
+        if isPrime(i) == True:
+            while num % i == 0:
+                num = num/i # divide the number by the least prime number each time
             result = i
+        
         if num == 1:
             break
         i +=1
@@ -32,5 +34,5 @@ def largestPrimeFactor(num):
     return result
 
 # define number n
-num =  600851475143
+num =  36
 print(largestPrimeFactor(num))
