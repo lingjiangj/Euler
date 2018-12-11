@@ -13,11 +13,12 @@ Created on Tue Dec 11 13:13:11 2018
 #8 5 9 3
 
 # That is, 3 + 7 + 4 + 9 = 23.
-# Find the maximum total from top to bottom of the triangle in file "ps18-numbers.txt"
+# Find the maximum total from top to bottom of the triangle in file "ps18-numbers.txt" and file "ps67-triangle.txt"
 
-def MaxPathSum():  
+import time
+start = time.time()
+def MaxPathSum(filename):  
     #open the number file and generate lists of numberlists for each line of the file 
-    filename = "ps18-numbers.txt"
     f = open(filename,"r")
     filelist = f.readlines()
     numlist = []
@@ -44,5 +45,6 @@ def MaxPathSum():
     return totalTri[(1,1)]    
 
            
-print(MaxPathSum())
-
+print(MaxPathSum(ps18-numbers.txt))
+print(MaxPathSum(ps67-triangle.txt))
+print(time.time()-start)
