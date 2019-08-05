@@ -25,3 +25,4 @@ def sumPrime(n):
 
 
 print(sumPrime(2000000))
+  
