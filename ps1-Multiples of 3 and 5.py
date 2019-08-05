@@ -14,4 +14,4 @@ def totalmult(limits):
 limits = 1000
 print("The sum is",totalmult(limits))
 
-        
+          
